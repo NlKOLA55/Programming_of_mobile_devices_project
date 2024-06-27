@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Mobil_Projekat</string>
+
+    <string name="select">Select</string>
+    <string name="question_list">Question List</string>
+    <string name="credits">Credits</string>
+    <string name="languages">Languages</string>
+    <string name="exit">Exit</string>
+    <string name="close">Close</string>
+    <string name="random">Random</string>
+    <string name="submit">Submit</string>
+    <string name="answer">Answer</string>
+    <string name="hint">Hint</string>
+    <string name="back">Back</string>
+    <string name="menu">Menu</string>
+
+    <string name="choose_language">Choose Language</string>
+    <string name="english">English</string>
+    <string name="serbian_latin">Serbian (Latin)</string>
+    <string name="serbian_cyrillic">Serbian (Cyrillic)</string>
+
+    <string name="exit_title">Exit Application</string>
+    <string name="exit_message">Are you sure you want to exit?</string>
+    <string name="exit_positive">Exit</string>
+    <string name="exit_negative">Stay</string>
+
+    <string name="hint_title">Show Hint</string>
+    <string name="hint_message">Are you sure you want to see the Hint?</string>
+    <string name="positive">Yes</string>
+    <string name="negative">No</string>
+
+    <string name="answer_title">Show Answer</string>
+    <string name="answer_message">Are you sure you want to see the Answer?</string>
+    <string name="author_name">Nikola Marjanušić</string>
+    <string name="project_for">Project for:</string>
+    <string name="class_name">Programming of mobile devices</string>
+</resources>

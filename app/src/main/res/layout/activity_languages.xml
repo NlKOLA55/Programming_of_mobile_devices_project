@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LanguagesActivity">
+
+    <LinearLayout
+        style="@style/MainLayout"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/menuBtn"
+            style="@style/MenuBtn"
+
+            android:layout_gravity="start"
+            android:layout_weight="0"
+            android:text="@string/menu"
+            android:onClick="menuBtnClick"
+            app:cornerRadius="0dp"/>
+        <LinearLayout
+            android:id="@+id/menuLayout"
+            style="@style/MenuLayout">
+            <Button
+                android:id="@+id/closeBtn"
+                style="@style/MenuBtn"
+
+                android:text="@string/close"
+                android:onClick="closeBtnClick"
+                app:cornerRadius="0dp"/>
+            <Button
+                android:id="@+id/backBtn"
+                style="@style/MenuBtn"
+
+                android:text="@string/back"
+                android:onClick="backBtnClick"
+                app:cornerRadius="0dp"/>
+            <Button
+                android:id="@+id/exitBtn"
+                style="@style/MenuBtn"
+
+                android:text="@string/exit"
+                android:onClick="exitBtnClick"
+                app:cornerRadius="0dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_language"
+            android:textSize="34sp"
+            android:textColor="@color/white"/>
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RadioButton
+                android:id="@+id/radioButtonEnglish"
+                style="@style/wrap_content"
+                android:text="@string/english"
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonSerbianLatin"
+                style="@style/wrap_content"
+                android:text="@string/serbian_latin"
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonSerbianCyrillic"
+                style="@style/wrap_content"
+                android:text="@string/serbian_cyrillic"
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+        </RadioGroup>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionActivity">
+
+    <LinearLayout
+        style="@style/MainLayout"
+
+        android:weightSum="100"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/menuBtn"
+            style="@style/MenuBtn"
+
+            android:layout_gravity="start"
+            android:layout_weight="0"
+            android:text="@string/menu"
+            android:onClick="menuBtnClick"
+            app:cornerRadius="0dp"
+            />
+        <LinearLayout
+            android:id="@+id/menuLayout"
+            style="@style/MenuLayout">
+
+            <Button
+                android:id="@+id/closeBtn"
+                style="@style/MenuBtn"
+                android:text="@string/close"
+
+                android:onClick="closeBtnClick"
+                app:cornerRadius="0dp"/>
+
+            <Button
+                android:id="@+id/backBtn"
+                style="@style/MenuBtn"
+                android:text="@string/back"
+
+                android:onClick="backBtnClick"
+                app:cornerRadius="0dp"/>
+
+            <Button
+                android:id="@+id/answerBtn"
+                style="@style/MenuBtn"
+                android:text="@string/answer"
+
+                android:onClick="answerBtnClick"
+                app:cornerRadius="0dp"/>
+
+
+            <Button
+                android:id="@+id/hintBtn"
+                style="@style/MenuBtn"
+                android:text="@string/hint"
+
+                android:onClick="hintBtnClick"
+                app:cornerRadius="0dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/questionText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:gravity="center|end"
+                    android:textAllCaps="true"
+                    android:textSize="48sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.5"
+                    android:textColor="@color/white"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/answerText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:hint="@string/answer"
+                    android:textSize="48sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_percent="0.5"
+                    android:autofillHints=""
+                    android:textColor="@color/white"/>
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="91dp"
+                    android:layout_height="86dp"
+                    android:contentDescription="img"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/answerText"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/submitBtn"
+                style="@style/Btn"
+
+                android:text="@string/submit"
+                android:onClick="submitBtn"/>
+
+            <Button
+                android:id="@+id/backBtn2"
+                style="@style/Btn"
+
+                android:visibility="gone"
+                android:text="@string/back"
+                android:onClick="backBtnClick"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                style="@style/wrap_content"
+                android:visibility="gone">
+
+                <RadioButton
+                    style="@style/wrap_content"
+                    android:id="@+id/hint1"
+                    android:textSize="34sp"
+
+                    android:onClick="radioGroupClick"/>
+
+                <RadioButton
+                    android:id="@+id/hint2"
+                    style="@style/wrap_content"
+                    android:textSize="34sp"
+
+                    android:onClick="radioGroupClick"/>
+
+                <RadioButton
+                    android:id="@+id/hint3"
+                    style="@style/wrap_content"
+                    android:textSize="34sp"
+
+                    android:onClick="radioGroupClick"/>
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mobil_Projekat</string>
+
+    <string name="select">Изаберите</string>
+    <string name="question_list">Листа питања</string>
+    <string name="credits">Kредити</string>
+    <string name="languages">Језици</string>
+    <string name="exit">Изађи</string>
+    <string name="close">затвори</string>
+    <string name="random">Рандом</string>
+    <string name="submit">прихвати</string>
+    <string name="answer">Одговор</string>
+    <string name="hint">Помоц</string>
+    <string name="back">Назад</string>
+    <string name="menu">Мени</string>
+
+    <string name="choose_language">Изаберите језик</string>
+    <string name="english">Енглески</string>
+    <string name="serbian_latin">Српски (Латиница)</string>
+    <string name="serbian_cyrillic">Српски (Ћирилица)</string>
+
+    <string name="exit_title">Изађи из апликације</string>
+    <string name="exit_message">Јеси сигуран да желиш да изађеш?</string>
+    <string name="exit_positive">Изађи</string>
+    <string name="exit_negative">Остани</string>
+
+    <string name="hint_title">Прикажи помоћ</string>
+    <string name="hint_message">Да ли сте сигурни да желите да видите помоћ?</string>
+    <string name="positive">да</string>
+    <string name="negative">Не</string>
+
+    <string name="answer_title">Покажи Одговор</string>
+    <string name="answer_message">Да ли сте сигурни да желите да видите одговор?</string>
+    <string name="author_name">Nikola Marjanušić</string>
+    <string name="project_for">Пројекат за:</string>
+    <string name="class_name">Програмирање мобилних уређаја</string>
+</resources>
